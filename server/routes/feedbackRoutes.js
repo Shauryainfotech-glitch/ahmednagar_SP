@@ -18,3 +18,7 @@ router.post('/', upload.single('image'), feedbackController.submitFeedback);
 router.get('/', feedbackController.getAllFeedback);
 
 module.exports = router;
+
+app.get("/", (req, res) => {
+  res.send("Backend is running successfully!");
+});
